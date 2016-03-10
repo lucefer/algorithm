@@ -1,0 +1,30 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "js与算法",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node webpack-config.js"
+  },
+  "keywords": [
+    "algorithm"
+  ],
+  "author": "shifei",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^5.8.0",
+    "babel-loader": "^5.4.0",
+    "babel-runtime": "^5.8.0",
+    "browserify": "^13.0.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.21",
+    "karma-browserify": "^5.0.2",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.7",
+    "karma-requirejs": "^0.2.1",
+    "karma-webpack": "^1.7.0",
+    "requires": "^1.0.2",
+    "watchify": "^3.7.0"
+  }
+}
