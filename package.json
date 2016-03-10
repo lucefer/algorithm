@@ -1,7 +1,7 @@
 {
   "name": "algorithm",
   "version": "1.0.0",
-  "description": "js与算法",
+  "description": "常用算法",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
   "keywords": [
     "algorithm"
   ],
-  "author": "shifei",
+  "author": "lucefer",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^5.8.0",
