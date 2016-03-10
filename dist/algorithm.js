@@ -62,7 +62,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _quickSortQuickSort = __webpack_require__(2);
 	
-	var Algorithm = { search: _halfSearchHalfSearch.search, searchByRecursion: _halfSearchHalfSearch.searchByRecursion, quickSort: _quickSortQuickSort.quickSort };
+	var _insertSortInsertSort = __webpack_require__(3);
+	
+	var Algorithm = { search: _halfSearchHalfSearch.search, searchByRecursion: _halfSearchHalfSearch.searchByRecursion, quickSort: _quickSortQuickSort.quickSort, insertSort: _insertSortInsertSort.insertSort };
 	exports['default'] = Algorithm;
 	module.exports = exports['default'];
 
@@ -158,6 +160,38 @@ return /******/ (function(modules) { // webpackBootstrap
 		}
 	
 		return quickSort(leftArr).concat(arr[benchmark], quickSort(rightArr));
+	}
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	/**
+	 * [insertSort 插入排序]
+	 * @param  {[type]} arr [description]
+	 * @return {[type]}     [description]
+	 */
+	"use strict";
+	
+	exports.__esModule = true;
+	exports.insertSort = insertSort;
+	
+	function insertSort(arr) {
+		var currValue = 0,
+		    j = 0;
+	
+		for (var i = 1, count = arr.length; i < count; i++) {
+			j = i;
+			currValue = arr[i];
+	
+			while (j > 0 && currValue < arr[j - 1]) {
+				arr[j] = arr[j - 1];
+				j--;
+			}
+	
+			arr[j] = currValue;
+		}
+		return arr;
 	}
 
 /***/ }
